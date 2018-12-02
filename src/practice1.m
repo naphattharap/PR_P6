@@ -129,6 +129,7 @@ testLabels = testSet.Labels;
 
 lenSample = length(testLabels);
 cntCorrect = 0;
+
 for i = 1:lenSample
     if testLabels(i) == predictedLabels(i)
         cntCorrect = cntCorrect + 1;
