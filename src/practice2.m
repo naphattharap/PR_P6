@@ -100,9 +100,10 @@ layers = [
     % POOL layer will perform a downsampling operation along the spatial dim.
     maxPooling2dLayer(2,'Stride',2)
     
-    convolution2dLayer(3,32,'Padding','same');
+    convolution2dLayer(3,16,'Padding','same');
     batchNormalizationLayer
     reluLayer
+
     
     % The OutputSize parameter in the last fully connected layer
     % is equal to the number of classes in the target data.
