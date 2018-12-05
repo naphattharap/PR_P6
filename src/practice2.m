@@ -100,6 +100,8 @@ layers = [
     % POOL layer will perform a downsampling operation along the spatial dim.
     maxPooling2dLayer(2,'Stride',2)
     
+    %'Padding','same' adds padding so that the output 
+    % has the same size as the input (if the stride equals 1).
     convolution2dLayer(3,16,'Padding','same');
     batchNormalizationLayer
     reluLayer
